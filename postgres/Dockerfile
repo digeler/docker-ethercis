@@ -43,3 +43,4 @@ RUN apt-get update && apt-get install -y \
 COPY ./scripts ./scripts
 COPY ./01_db_creation.sh ./docker-entrypoint-initdb.d/01_db_creation.sh
 COPY ./02_db_init.sh ./docker-entrypoint-initdb.d/02_db_init.sh
+EXPOSE 5432
